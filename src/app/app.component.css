@@ -1,0 +1,76 @@
+#tittle{
+    width:100vw;
+    height:50px;
+    background: #43a2b9;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Estilo general de la tabla */
+
+#content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentDescription{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+table {
+    width: 50vw; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes para que no haya espacios entre celdas */
+    font-family: Arial, sans-serif; 
+    margin: 75px;
+    border: 1px solid  #f0f1f1;
+  }
+  
+  /* Estilo para las celdas de la tabla (th y td) */
+  th, td {
+     /* Bordes delgados y negros */
+    padding: 8px; /* Espaciado interno estándar para las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    font-size: 14px; /* Tamaño de fuente consistente */
+    color: black; 
+    border: 1px solid #ececec/* Texto en negro */
+    
+  }
+  
+  /* Estilo específico para los encabezados (th) */
+  th {
+    font-weight: normal;
+    
+  }
+  
+  /* Ajuste de ancho para las columnas */
+  th:first-child, td:first-child {
+    width: 5%; /* Columna del número, más estrecha */
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 50%; /* Columna "Name", más ancha para títulos largos */
+  }
+  
+  th:nth-child(3), td:nth-child(3) {
+    width: 20%; /* Columna "Channel" */
+  }
+  
+  th:nth-child(4), td:nth-child(4) {
+    width: 10%; /* Columna "Seasons" */
+  }
+  
+  td{
+    background: #f0f1f1; 
+  }
+  
+  /* Eliminar márgenes y paddings adicionales del contenedor */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }

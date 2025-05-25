@@ -29,4 +29,10 @@ export class ListarSeriesComponent {
       this.seriesCargadas.emit(this.series);
     });
   }
+
+   promedioTemporadas(): number {
+    if (this.series.length === 0) return 0;
+    const totalTemporadas = this.series.reduce((suma, serie) => suma + serie.seasons, 0);
+    return totalTemporadas / this.series.length;
+  }
 }

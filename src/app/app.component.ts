@@ -15,6 +15,7 @@ export class AppComponent {
   firstInit: boolean = true;
   title: string = '';
   srcimg: string = '';
+  promedio: number = 0;
 
   recibirSeries(series: Serie[]) {
     this.lista_series = series;

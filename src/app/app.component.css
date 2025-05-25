@@ -74,3 +74,9 @@ table {
     margin: 0;
     padding: 0;
   }
+
+  img{
+    max-width: 500px; 
+    object-fit: cover; border-radius: 5px;
+  }
+
